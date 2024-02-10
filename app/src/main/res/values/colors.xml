@@ -2,4 +2,7 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="splashColor">#FBFBFB</color>
+    <color name="actionBarColor">#B7935F</color>
+    <color name="statsBarColor">#937447</color>
 </resources>
