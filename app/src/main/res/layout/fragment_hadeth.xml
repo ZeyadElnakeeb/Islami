@@ -7,7 +7,52 @@
     android:layout_height="match_parent"
     tools:context=".fragments.HadethFragment">
 
+    <ImageView
+        android:id="@+id/logoImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/logo_hadeth"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
+    <View
+        android:id="@+id/line1"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/actionBarColor"
+        app:layout_constraintTop_toBottomOf="@id/logoImage"/>
+
+    <TextView
+        android:id="@+id/hadeth"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/hadiths"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toBottomOf="@id/line1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <View
+        android:id="@+id/line2"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:layout_marginTop="4dp"
+        android:background="@color/actionBarColor"
+        app:layout_constraintTop_toBottomOf="@id/hadeth"/>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/hadethNameRv"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/line2" />
 
 
 
