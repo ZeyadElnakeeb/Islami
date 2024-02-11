@@ -1,5 +1,6 @@
 package com.example.islamy.fragments
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
@@ -8,6 +9,7 @@ import android.view.ViewGroup
 import android.widget.Toast
 import com.example.islamy.Adapter.SuraNameAdapter
 import com.example.islamy.databinding.FragmentQuranBinding
+import com.example.islamy.sura.detals.SuarDetails
 
 
 class QuranFragment : Fragment() {
@@ -44,16 +46,18 @@ class QuranFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-
         adapter= SuraNameAdapter(surasName)
         adapter.onItemClick=object :SuraNameAdapter.SetOnItemClickListener{
             override fun onClick(position: Int, item: String) {
-                Toast.makeText(context, "name of sura is $position",Toast.LENGTH_SHORT).show()
+            var intent=Intent(context,SuarDetails::class.java)
+                intent.putExtra("nameOfSura",surasName[position])
+              intent.putExtra("details","${position+1}.txt")
+
+startActivity(intent)
+
             }
 
-
         }
-
 
         quranBinding?.suraNameRv?.adapter =adapter
 

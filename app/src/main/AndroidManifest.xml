@@ -13,10 +13,14 @@
         android:theme="@style/Theme.Islamy"
         tools:targetApi="31">
         <activity
+            android:name=".sura.detals.SuarDetails"
+            android:exported="false" >
+
+        </activity>
+        <activity
             android:name=".splashScreen.SplashActivity"
             android:exported="true"
-            android:theme="@style/splash"
-            >
+            android:theme="@style/splash">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -25,9 +29,7 @@
         </activity>
         <activity
             android:name=".HomeActivity"
-            android:exported="true">
-
-        </activity>
+            android:exported="true"></activity>
     </application>
 
 </manifest>
