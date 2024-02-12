@@ -8,7 +8,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.islamy.R
 
 
-class SuraNameAdapter(var suraNames: List<String>):RecyclerView.Adapter<SuraNameAdapter.ViewHolder>() {
+class Adapter(var suraNames: List<String>):RecyclerView.Adapter<com.example.islamy.Adapter.Adapter.ViewHolder>() {
 
 
 
@@ -23,11 +23,13 @@ class SuraNameAdapter(var suraNames: List<String>):RecyclerView.Adapter<SuraName
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
 var items=suraNames[position]
-        holder.suraName.text=suraNames[position]
+
+holder.suraName.text=items
 
         holder.itemView.setOnClickListener{
 
-        onItemClick.onClick(position,items)
+                onItemClick.onClick(position,items)
+
         }
 
     }
