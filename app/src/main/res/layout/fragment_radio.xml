@@ -8,6 +8,64 @@
     tools:context=".fragments.HadethFragment">
 
 
+    <ImageView
+        android:id="@+id/radioLogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/logo_radio"
+ android:layout_marginTop="150dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/Holy_Quran_Radio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/holy_quran_radio"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioLogo" />
+
+
+    <ImageView
+        android:id="@+id/ic_play_radio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_play_radio"
+        android:layout_marginTop="50dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Holy_Quran_Radio" />
+
+
+    <ImageView
+        android:id="@+id/ic_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_right"
+        app:layout_constraintBottom_toBottomOf="@+id/ic_play_radio"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/ic_play_radio"
+        app:layout_constraintTop_toTopOf="@+id/ic_play_radio" />
+
+
+    <ImageView
+        android:id="@+id/ic_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_left"
+        android:layout_marginStart="50dp"
+        app:layout_constraintBottom_toBottomOf="@+id/ic_play_radio"
+        app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintEnd_toStartOf="@id/Holy_Quran_Radio"
+        app:layout_constraintTop_toTopOf="@+id/ic_play_radio" />
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

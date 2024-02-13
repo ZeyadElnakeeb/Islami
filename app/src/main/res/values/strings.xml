@@ -7,4 +7,5 @@
     <string name="sura_name" translatable="false">sura name</string>
     <string name="hadiths" translatable="false">Hadiths</string>
     <string name="number_of_tasbhat" translatable="false">number of tasbhat</string>
+    <string name="holy_quran_radio" translatable="false">Holy Quran Radio</string>
 </resources>
