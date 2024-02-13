@@ -32,6 +32,13 @@ holder.suraName.text=items
 
         }
 
+        if (holder.adapterPosition == suraNames.size -1)
+        {
+holder.itemView.findViewById<View>(R.id.lastLine)
+    .visibility=View.GONE
+
+        }
+
     }
     lateinit var onItemClick:SetOnItemClickListener
 

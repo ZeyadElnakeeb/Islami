@@ -1,8 +1,10 @@
 <resources>
     <string name="app_name" translatable="false">islamy</string>
     <string name="islami" translatable="false">islami</string>
+
     <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+
     <string name="sura_name" translatable="false">sura name</string>
     <string name="hadiths" translatable="false">Hadiths</string>
+    <string name="number_of_tasbhat" translatable="false">number of tasbhat</string>
 </resources>

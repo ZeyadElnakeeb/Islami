@@ -20,6 +20,7 @@
 
 
     <View
+        android:id="@+id/lastLine"
         android:layout_width="300dp"
         android:layout_height="3dp"
         android:layout_marginTop="8dp"
